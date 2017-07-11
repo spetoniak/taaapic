@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>taaapic</title>
+        <meta name="description." content="An experiment in database topic selection.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="Favicon.png">
+        <link rel="stylesheet" href="css/simple-grid.css">
+        <script src="js/Allofthe.js"></script>
+        <script>
+            //fully random method... select a base file at random
+            //var rnd = Math.floor(Math.random() * 3) + 1; //rnd between 1 and 4
+
+            //one item per day method
+            var rnd = (new Date().getDay()) % 4; //rnd between 1 and 4
+            console.log("Today's value: " +  rnd );
+            if(rnd==0){
+                rnd=1;
+            }
+            var tag = document.createElement("script");
+            tag.type = 'text/javascript';
+            tag.async = true;
+            tag.src = "js/t"+rnd+".js";
+            document.getElementsByTagName("head")[0].appendChild(tag);
+        </script>
+    </head>
+    <body onload="replacer()">
+        <div class="container">
+            <!--LOGO-->
+            <div class="row">
+                <div class="col-1">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="38px" viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve">
+                        <style type="text/css">
+	                       .st0{fill:#0000FF;}
+	                       .st1{fill:#00FF00;}
+	                       .st2{fill:#FF0000;}
+                        </style>
+                        <g>
+	                       <g class="blend r3">
+		                      <path class="st0" d="M17,15l-0.2,2c-0.6,0.2-1.2,0.3-1.9,0.3c-0.8,0-1.5-0.2-2-0.5c-0.5-0.4-0.8-1-0.9-1.8
+			                     c-0.5,0.7-1.2,1.3-2.2,1.7s-1.9,0.6-3,0.6c-1.6,0-2.9-0.4-3.9-1.1c-1-0.7-1.5-1.8-1.5-3.2c0-1.2,0.5-2.3,1.6-3.2
+			                     C4.2,9,5.7,8.4,7.7,8L12,7.3V6.4c0-1.1-0.3-1.9-1-2.6c-0.7-0.6-1.6-1-2.8-1c-1.1,0-2,0.3-2.8,0.8C4.7,4.2,4.1,5,3.7,6L1.8,4.6
+                                 C2.2,3.4,3,2.4,4.2,1.7C5.3,1,6.7,0.7,8.2,0.7c1.9,0,3.4,0.5,4.6,1.4C14,3,14.5,4.3,14.5,6.1V14c0,0.4,0.1,0.7,0.3,0.9
+			                     s0.5,0.3,0.9,0.3C16.2,15.1,16.6,15.1,17,15z M10.5,14.1c1-0.6,1.5-1.5,1.5-2.5V9.4l-3.6,0.7c-1.4,0.3-2.5,0.6-3.2,1.1
+			                     S4.1,12.3,4.1,13c0,0.7,0.3,1.2,0.8,1.5c0.5,0.4,1.2,0.5,2.1,0.5C8.4,15.1,9.6,14.8,10.5,14.1z"/>
+	                       </g>
+	                       <g class="blend r2">
+                              <path class="st1" d="M17,15l-0.2,2c-0.6,0.2-1.2,0.3-1.9,0.3c-0.8,0-1.5-0.2-2-0.5c-0.5-0.4-0.8-1-0.9-1.8
+                                 c-0.5,0.7-1.2,1.3-2.2,1.7s-1.9,0.6-3,0.6c-1.6,0-2.9-0.4-3.9-1.1c-1-0.7-1.5-1.8-1.5-3.2c0-1.2,0.5-2.3,1.6-3.2
+                                 C4.2,9,5.7,8.4,7.7,8L12,7.3V6.4c0-1.1-0.3-1.9-1-2.6c-0.7-0.6-1.6-1-2.8-1c-1.1,0-2,0.3-2.8,0.8C4.7,4.2,4.1,5,3.7,6L1.8,4.6
+                                 C2.2,3.4,3,2.4,4.2,1.7C5.3,1,6.7,0.7,8.2,0.7c1.9,0,3.4,0.5,4.6,1.4C14,3,14.5,4.3,14.5,6.1V14c0,0.4,0.1,0.7,0.3,0.9
+                                 s0.5,0.3,0.9,0.3C16.2,15.1,16.6,15.1,17,15z M10.5,14.1c1-0.6,1.5-1.5,1.5-2.5V9.4l-3.6,0.7c-1.4,0.3-2.5,0.6-3.2,1.1
+                                 S4.1,12.3,4.1,13c0,0.7,0.3,1.2,0.8,1.5c0.5,0.4,1.2,0.5,2.1,0.5C8.4,15.1,9.6,14.8,10.5,14.1z"/>
+	                       </g>
+	                       <g class="blend r1">
+                              <path class="st2" d="M17,15l-0.2,2c-0.6,0.2-1.2,0.3-1.9,0.3c-0.8,0-1.5-0.2-2-0.5c-0.5-0.4-0.8-1-0.9-1.8
+                                 c-0.5,0.7-1.2,1.3-2.2,1.7s-1.9,0.6-3,0.6c-1.6,0-2.9-0.4-3.9-1.1c-1-0.7-1.5-1.8-1.5-3.2c0-1.2,0.5-2.3,1.6-3.2
+                                 C4.2,9,5.7,8.4,7.7,8L12,7.3V6.4c0-1.1-0.3-1.9-1-2.6c-0.7-0.6-1.6-1-2.8-1c-1.1,0-2,0.3-2.8,0.8C4.7,4.2,4.1,5,3.7,6L1.8,4.6
+                                 C2.2,3.4,3,2.4,4.2,1.7C5.3,1,6.7,0.7,8.2,0.7c1.9,0,3.4,0.5,4.6,1.4C14,3,14.5,4.3,14.5,6.1V14c0,0.4,0.1,0.7,0.3,0.9
+                                 s0.5,0.3,0.9,0.3C16.2,15.1,16.6,15.1,17,15z M10.5,14.1c1-0.6,1.5-1.5,1.5-2.5V9.4l-3.6,0.7c-1.4,0.3-2.5,0.6-3.2,1.1
+                                 S4.1,12.3,4.1,13c0,0.7,0.3,1.2,0.8,1.5c0.5,0.4,1.2,0.5,2.1,0.5C8.4,15.1,9.6,14.8,10.5,14.1z"/>
+	                       </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <!--PREAMBLE-->
+            <div class="row ">        
+                <div class="col-12">
+                    <h1>
+                        Today's t<font style = "color: #ff0000 !important">a</font><font style = "color: #0ff000 !important">a</font><font style = "color: #0000ff !important">a</font>pic is from the category <span id='category'> </span>
+                    </h1>
+                </div>
+            </div>
+            <!--TAAAPIC-->
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="taaapic" class='clearfix'>
+                        <a href="#" target="_blank" class="taaapic">&nbsp;</a>
+                    </h2>
+                </div>
+            </div>
+            <!--COUNTDOWN-->
+            <div class="row">
+                <div class="col-8">
+                    <h3 id="countdown">
+                        30:00
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" id="showme">What is this?</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7" id="description">
+                    <p>
+                        taaapic is an experiment in database product topic selection. It selects product categories from amazon as the taaapic of the day. I use this to get outside of my comfort zone when sketching products. Yes this might show a product that is NSFW.
+                    </p>
+                    <p>
+                        Made by Stephen Petoniak, Clark Dever, and Robert Maefs.
+                    </p>
+                </div>
+            </div>
+            <h6>© taaapic 2017</h6>
+        </div>
+    </body>
+    <!--NULL-->
+</html>
